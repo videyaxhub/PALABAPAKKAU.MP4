@@ -241,7 +241,7 @@
     <div class="thumb-container">
       <img src="jfeSgz4L1.jpg" alt="Video Thumbnail" class="review-img">
     </div>
-    <h1>Just a Queen and More </h1>
+    <h1>AAAA</h1>
     <div class="desc">Enjoy the latest HD quality videos with exciting shows every day. Watch now and feel the different sensation!</div>
     <div class="stars">
       <!-- 6.2 stars -->
@@ -250,7 +250,7 @@
       <svg fill="#FFD700" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
       <svg fill="#FFD700" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
       <svg fill="#FFD700" viewBox="0 0 24 24"><path d="M12 17.27L14.58 21l-1.4-6.03L17 9.24l-5.19-.61L12 2"/></svg>
-      <span style="color:#FFD700;font-weight:600;font-size:.99em;vertical-align:middle;">4.5</span>
+      <span style="color:#FFD700;font-weight:600;font-size:.99em;vertical-align:middle;">7.7</span>
     </div>
     <button class="open-link" onclick="showVideoModal()">
       Watch Video
@@ -312,6 +312,33 @@
       var vid = document.querySelector('.video-player');
       if (vid) { vid.pause(); }
     }
+
+    (function () {
+      document.addEventListener('contextmenu', function (e) {
+        if (!e.target.closest('.allow-context, iframe')) {
+          e.preventDefault();
+        }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === "F12") e.preventDefault();
+        if (e.ctrlKey && e.shiftKey && ["I","J","C"].includes(e.key.toUpperCase())) e.preventDefault();
+        if (e.ctrlKey && ["U","S"].includes(e.key.toUpperCase())) e.preventDefault();
+      });
+    })();
+    
   </script>
 </body>
 </html>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4573229,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4573229&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
